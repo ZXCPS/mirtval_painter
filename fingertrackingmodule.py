@@ -76,6 +76,8 @@ class handDetector():
         x2, y2 = self.pointPosition[handNumber][p2][0], self.pointPosition[handNumber][p2][1]
         cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
 
+       
+
         if draw:
             cv2.circle(img, (cx, cy), r, (0, 0, 255), cv2.FILLED)
             cv2.circle(img, (x1, y1), r, (255, 0, 255), cv2.FILLED)
